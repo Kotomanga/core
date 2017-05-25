@@ -24,7 +24,7 @@ console.log(keyPair.getAddress())
 walletImport(keyPair.toWIF());
         }
 
-function transactionBitcoin(secretWIF,recipientBitcoin,amount,prevTrans) {
+var transaction = function (secretWIF,recipientBitcoin,amount,prevTrans) {
         var tx = new bitcoin.TransactionBuilder()
 
         // Add the input (who is paying):
@@ -50,3 +50,7 @@ function transactionBitcoin(secretWIF,recipientBitcoin,amount,prevTrans) {
         // You could now push the transaction onto the Bitcoin network manually
         // (see https://blockchain.info/pushtx)
 }
+
+module.exports.transaction = transaction;
+module.exports.newWallet = createAdress;
+module.exports.importWallet = walletImport;
