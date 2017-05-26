@@ -1,10 +1,10 @@
 {
   "name": "solariot",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "P2P distributed energy grid using blockchain transactions",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
   "dependencies": {
     "bitcoinjs-lib": "^3.0.3",
     "coinkey": "^2.0.0",
+    "express": "^4.15.3",
     "node-gyp": "^3.6.1"
   },
   "devDependencies": {}

@@ -14,4 +14,4 @@ parts:
     # See 'snapcraft plugins'
     plugin: nodejs
     node-engine: 7.10.0
-    node-packages: [coinkey, coininfo]
+    node-packages: [coinkey, coininfo,express]
