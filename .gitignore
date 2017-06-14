@@ -57,3 +57,29 @@ typings/
 # dotenv environment variables file
 .env
 
+# snapcraft
+
+docs/reference.md
+demos/*/parts/
+demos/*/prime/
+demos/*/stage/
+demos/**/*.snap
+tests/unit/parts/
+tests/unit/snap/
+tests/unit/stage/
+build
+dist
+*.egg-info
+.eggs/
+*.pyc
+.coverage**
+htmlcov
+__pycache__
+docs/**.html
+Cargo.lock
+target
+*.swp
+*.snap
+parts
+stage
+prime
