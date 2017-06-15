@@ -13,5 +13,5 @@ parts:
   my-part:
     # See 'snapcraft plugins'
     plugin: nodejs
-    node-engine: 7.10.0
-    node-packages: [coinkey, coininfo,express]
+    node-engine: 8.1.0
+    node-packages: [coinkey,coininfo,express,ethereumjs-vm,express,node-gyp,async,ethereumjs-account,ethereumjs-tx,merkle-patricia-tree,rlp,ethereumjs-util]
