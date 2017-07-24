@@ -1,5 +1,4 @@
 var fs = require('fs');
-const ledger = require('./src/ledger');
 const peer = require('./src/peering');
 const power = require('./src/power');
 const admin = require('./src/connect/start');
