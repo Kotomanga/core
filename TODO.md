@@ -2,7 +2,7 @@
 
 1. Microcontroller intergration to allow flow of electicity to other peers
 2. Automatic Peer Mesh Networking
-3. Ethereum
+3. Ethereum token and proof of worth
 - Tokens generation and destroying based on energy use and assigning to Peers.
 - Transfer and payment checking / validation. NO IDEA
 4. GOD DAMN CONFIG FILES!
