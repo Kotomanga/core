@@ -1,6 +1,6 @@
 {
   "name": "solariot",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "P2P distributed energy grid using blockchain transactions",
   "main": "app.js",
   "scripts": {
@@ -25,7 +25,6 @@
   },
   "homepage": "https://github.com/SolarIot/rIoT-core#readme",
   "dependencies": {
-    "bitcoinjs-lib": "^3.0.3",
     "coinkey": "^2.0.0",
     "ethereumjs-connect": "^4.1.2",
     "ethereumjs-vm": "^2.0.2",
