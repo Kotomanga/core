@@ -10,7 +10,8 @@
 4. GOD DAMN CONFIG FILES!
 - extension for any manufacturer / hobbiest / personal product
 - mobile app in ```rIoT-core``` soon!
-5. Plugin Solutions of Manufacturers! ex: Batteries, Photovoltaics, Maybe furturistic Residential Wind Machines
-6. Google blockly for easy configuration by user / easy UI/UX.
+5. Plugin Solutions of Manufacturers! ex: Batteries, Photovoltaics, Maybe furturistic Residential Wind Machines NO IDEA
+6. Easy selling of electricity. like. easy.... NOIDEA
+7. Prevent Cheating NO IDEA
 
 #### DONE!
