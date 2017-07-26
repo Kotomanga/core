@@ -6,7 +6,6 @@
 const fs = require("fs");
 const solc = require('solc')
 
-
 let source = fs.readFileSync('solCredits.sol', 'utf8');
 let compiledContract = solc.compile(source, 1);
 let abi = compiledContract.contracts['nameContract'].interface;
