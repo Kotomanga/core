@@ -16,11 +16,11 @@
           balanceOf[msg.sender] -= _value;                     // Subtract from the sender
           balanceOf[_to] += _value;                            // Add the same to the recipient
       }
-    }
 
-    function mintToken(address target, uint256 mintedAmount) onlyOwner {
+      function mintToken(address target, uint256 mintedAmount) onlyOwner {
         balanceOf[target] += mintedAmount;
         totalSupply += mintedAmount;
         Transfer(0, owner, mintedAmount);
         Transfer(owner, target, mintedAmount);
-    }
+        }
+}
