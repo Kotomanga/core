@@ -8,8 +8,8 @@ const solc = require('solc')
 
 let source = fs.readFileSync('solCredits.sol', 'utf8');
 let compiledContract = solc.compile(source, 1);
-let abi = compiledContract.contracts['nameContract'].interface;
-let bytecode = compiledContract.contracts['nameContract'].bytecode;
+let abi = compiledContract.contracts['solCredits'].interface;
+let bytecode = compiledContract.contracts['solCredits'].bytecode;
 let gasEstimate = web3.eth.estimateGas({data: bytecode});
 let MyContract = web3.eth.contract(JSON.parse(abi));
 
