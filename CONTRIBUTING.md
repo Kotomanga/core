@@ -5,6 +5,7 @@
 So... You want to know how to contribute...
 
 Start by forking the project! There are Ideas, Bug Fixes, and All sorts of things in the "issues tab." Go there for some fun! Lots of Ideas and Code are passed around.
+Please check out the chat room and TODO.md. Lots of stuff you can work on.
 
 After you are satisified, you can then submit a pull request. There may be some discussion before your code is accepted.
 
