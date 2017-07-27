@@ -1,5 +1,7 @@
 pragma solidity ^0.4.8;
 
+
+//I OWN EVERYTHING
 contract owned {
     address public owner;
 
