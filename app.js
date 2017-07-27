@@ -1,3 +1,6 @@
+var Web3 = require('web3');
+var web3 = new Web3();
+
 var fs = require('fs');
 const peer = require('./src/peering');
 const power = require('./src/power');
