@@ -1,5 +1,7 @@
 ## SolarIoT P2P energy transactions using distributed ledger and allocation via Ethereum Tokens
 
+[![Snap Status](https://build.snapcraft.io/badge/solariot/core.svg)](https://build.snapcraft.io/user/solariot/core)
+
 The problem we plan to solve with SolarIoT is allowing anybody to sell electricity to each other with simple devices and little to no technical experience on the Ethereum blockchain.
 Please read the whitepaper at Whitepaper.md
 
