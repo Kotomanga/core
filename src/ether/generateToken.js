@@ -53,7 +53,7 @@ var deploySolInstance = deploySol.at(userAddress);
 var result = deploySolInstance.myConstantMethod('myParam');
 console.log(result) // '0x25434534534'
 
-deploySolInstance.myStateChangingMethod('someParam1', 23, {value: 200, gas: 2000}, function(err, result){ ... });
+deploySolInstance.myStateChangingMethod('someParam1', 23, {value: 200, gas: 2000});
 
 //BLAH
 // short hand style
