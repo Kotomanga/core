@@ -6,5 +6,5 @@ var web3 = new Web3();
 
 const generate = require('./generateToken');
 const purchase = require('./purchaseToken');
-const burn = require('burn.js');
+const burn = require('./burn.js');
 const ipfs = require('./../ipfs/deploy.js');
