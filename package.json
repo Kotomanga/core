@@ -21,9 +21,9 @@
   "author": "solariot",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/SolarIot/rIoT-core/issues"
+    "url": "https://github.com/SolarIot/core/issues"
   },
-  "homepage": "https://github.com/SolarIot/rIoT-core#readme",
+  "homepage": "https://github.com/SolarIot/core#readme",
   "dependencies": {
     "async": "^2.5.0",
     "express": "^4.15.3",
