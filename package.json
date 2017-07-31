@@ -1,6 +1,6 @@
 {
   "name": "solariot",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "P2P distributed energy grid using blockchain transactions",
   "main": "app.js",
   "scripts": {
