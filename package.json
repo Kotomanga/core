@@ -1,6 +1,6 @@
 {
   "name": "solariot",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "P2P distributed energy grid using blockchain transactions",
   "main": "app.js",
   "scripts": {
@@ -31,6 +31,7 @@
     "ipfs-api": "^14.1.1",
     "node-gyp": "^3.6.1",
     "solc": "^0.4.13",
+    "truffle": "^3.4.6",
     "web3": "^0.19.0"
   },
   "devDependencies": {}
