@@ -4,13 +4,11 @@ import "zeppelin-solidity/contracts/token/PausableToken.sol";
 import "zeppelin-solidity/contracts/token/MintableToken.sol";
 import "./BurnableToken.sol";
 
-contract SomeToken is BurnableToken, PausableToken, MintableToken {
+contract SolCredits is BurnableToken, PausableToken, MintableToken {
 
-contract SOMETHINGToken is {
+    string public constant symbol = "SOLR";
 
-    string public constant symbol = "SHORT-SYMBOL";
-
-    string public constant name = "SOLARIOT BLAH BLAH";
+    string public constant name = "SolarIoT SolCredits";
 
     uint8 public constant decimals = 18;
 
