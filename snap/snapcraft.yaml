@@ -14,4 +14,4 @@ parts:
     # See 'snapcraft plugins'
     plugin: nodejs
     node-engine: 7.10.0
-    node-packages: [async,express,ipfs,ipfs-api,node-gyp,web3,truffle]
+    node-packages: [async,express,ipfs,ipfs-api,node-gyp,web3,truffle,zeppelin-solidity]
