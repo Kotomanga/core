@@ -1,4 +1,4 @@
-## SolarIoT P2P energy transactions using distributed ledger and allocation via Ethereum Tokens
+## SolarIoT P2P energy transactions using Ethereum Smart Contracts & Tokens
 
 [![Snap Status](https://build.snapcraft.io/badge/solariot/core.svg)](https://build.snapcraft.io/user/solariot/core)
 
