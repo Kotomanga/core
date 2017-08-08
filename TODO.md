@@ -2,6 +2,7 @@
 - Plugin Solutions of Manufacturers! ex: Batteries, Photovoltaics, Maybe furturistic Residential Wind Machines NO IDEA
 - Switch.IM Mobile App
 - extension for any manufacturer / hobbiest / personal product
+-Microcontroller intergration to allow flow of electicity to other peers
 
 #### WIP:
 
@@ -14,11 +15,10 @@
 - Easy selling of electricity. like. easy....
 -  GOD DAMN CONFIG FILES!
 
-
-5.
-6. Microcontroller intergration to allow flow of electicity to other peers
-
 #### EMERGENCY
+These need to be none ASAP.
+
+
 
 #### DONE!
 
