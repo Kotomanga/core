@@ -1,6 +1,6 @@
 #### ICEBOX
 - Plugin Solutions of Manufacturers! ex: Batteries, Photovoltaics, Maybe furturistic Residential Wind Machines NO IDEA
-- Switch.IM Mobile App
+- Switch.IM Mobile DApp + Chatbot API
 - extension for any manufacturer / hobbiest / personal product
 -Microcontroller intergration to allow flow of electicity to other peers
 
