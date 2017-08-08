@@ -4,6 +4,10 @@
 - extension for any manufacturer / hobbiest / personal product
 -Microcontroller intergration to allow flow of electicity to other peers
 
+##### PROBLEMS WITH SOME CRAP:
+- How will the token be used in the long term updates?
+- VERY.... VERY.... CONFUSING.....
+
 #### WIP:
 
 - Automatic Peer Mesh Networking
