@@ -6,6 +6,7 @@
 
 ##### PROBLEMS WITH SOME CRAP:
 - How will the token be used in the long term updates?
+- Where to execute the transaction? Gas Tx cost is too high
 - VERY.... VERY.... CONFUSING.....
 
 #### WIP:
