@@ -10,7 +10,9 @@
    ],
    "ether-account": [
      {
-       "address":""
+       "address":"",
+       "private":"",
+       "swarm": {}
      }
    ]
 }
