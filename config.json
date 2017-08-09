@@ -1,1 +1,11 @@
-{"Hello, World!"}
+{
+   "peer-info": [
+      {
+         "name":"",
+         "lat": "0",
+         "long": "0",
+         "contact": "",
+         "address":""
+      }
+   ]
+}
