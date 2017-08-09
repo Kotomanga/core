@@ -12,7 +12,8 @@
      {
        "address":"",
        "private":"",
-       "swarm": {}
+       "swarm": {},
+       "id":""
      }
    ]
 }

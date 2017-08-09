@@ -6,11 +6,9 @@
 
 ##### PROBLEMS WITH SOME CRAP:
 - How will the token be used in the long term updates?
-- Where to execute the transaction? Gas Tx cost is too high
-- VERY.... VERY.... CONFUSING.....
 
 #### WIP:
-
+- Where to execute the transaction? Gas Tx cost is too high
 - Automatic Peer Mesh Networking
 - Token destroy based on energy use and assigning to Peers.
 - Proof of worth without having people dying on blockchain fees

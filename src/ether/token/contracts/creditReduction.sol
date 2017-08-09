@@ -19,8 +19,7 @@ contract creditReduction {
       ) {
       balanceOf[msg.sender] = initialSupply;              // Give the creator all initial tokens
       totalSupply = initialSupply;                        // Update total supply
-      name = tokenName;                                   // Set the name for display purposes
-      symbol = tokenSymbol;                               // Set the symbol for display purposes
+      name = 'from > 0x1 / id1 to > 0x2 / id2';                                   // Set the name for display purposes
       decimals = decimalUnits;                            // Amount of decimals for display purposes
   }
 
