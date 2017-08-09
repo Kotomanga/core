@@ -12,6 +12,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "ethereumjs-testrpc": "^4.0.1",
     "zeppelin-solidity": "^1.2.0"
   }
 }
