@@ -7,5 +7,14 @@
          "contact": "",
          "address":""
       }
+   ],
+   "ether-account": [
+     {
+       "tokenAddr":"0x",
+       "address":"",
+       "private":"",
+       "swarm": {},
+       "id":""
+     }
    ]
 }

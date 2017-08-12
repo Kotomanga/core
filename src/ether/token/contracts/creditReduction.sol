@@ -1,4 +1,73 @@
 pragma solidity ^0.4.13;
 
 contract creditReduction {
+  contract tokenRecipient { function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData); }
+
+  mapping (address => uint256) public balanceOf;
+  mapping (address => mapping (address => uint256)) public allowance;
+
+  event Transfer(address indexed from, address indexed to, uint256 value);
+
+  event Burn(address indexed from, uint256 value);
+
+  /* Initializes contract with initial supply tokens to the creator of the contract */
+  function MyToken(
+      uint256 initialSupply,
+      string tokenName,
+      uint8 decimalUnits,
+      string tokenSymbol
+      ) {
+      balanceOf[msg.sender] = initialSupply;              // Give the creator all initial tokens
+      totalSupply = initialSupply;                        // Update total supply
+      name = 'from > 0x1 / id1 to > 0x2 / id2';                                   // Set the name for display purposes
+      decimals = decimalUnits;                            // Amount of decimals for display purposes
+  }
+
+  /* Allow another contract to spend some tokens in your behalf */
+  function approve(address _spender, uint256 _value)
+      returns (bool success) {
+      allowance[msg.sender][_spender] = _value;
+      return true;
+  }
+
+  /* Approve and then communicate the approved contract in a single tx */
+  function approveAndCall(address _spender, uint256 _value, bytes _extraData)
+      returns (bool success) {
+      tokenRecipient spender = tokenRecipient(_spender);
+      if (approve(_spender, _value)) {
+          spender.receiveApproval(msg.sender, _value, this, _extraData);
+          return true;
+      }
+  }
+
+  /* A contract attempts to get the coins */
+  function transferFrom(address _from, address _to, uint256 _value) returns (bool success) {
+      if (_to == 0x0) throw;                                // Prevent transfer to 0x0 address. Use burn() instead
+      if (balanceOf[_from] < _value) throw;                 // Check if the sender has enough
+      if (balanceOf[_to] + _value < balanceOf[_to]) throw;  // Check for overflows
+      if (_value > allowance[_from][msg.sender]) throw;     // Check allowance
+      balanceOf[_from] -= _value;                           // Subtract from the sender
+      balanceOf[_to] += _value;                             // Add the same to the recipient
+      allowance[_from][msg.sender] -= _value;
+      Transfer(_from, _to, _value);
+      return true;
+  }
+
+  function burn(uint256 _value) returns (bool success) {
+      if (balanceOf[msg.sender] < _value) throw;            // Check if the sender has enough
+      balanceOf[msg.sender] -= _value;                      // Subtract from the sender
+      totalSupply -= _value;                                // Updates totalSupply
+      Burn(msg.sender, _value);
+      return true;
+  }
+
+  function burnFrom(address _from, uint256 _value) returns (bool success) {
+      if (balanceOf[_from] < _value) throw;                // Check if the sender has enough
+      if (_value > allowance[_from][msg.sender]) throw;    // Check allowance
+      balanceOf[_from] -= _value;                          // Subtract from the sender
+      totalSupply -= _value;                               // Updates totalSupply
+      Burn(_from, _value);
+      return true;
+  }
+
 }
