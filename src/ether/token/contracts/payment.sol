@@ -16,7 +16,7 @@ contract payment {
         //uint Pe,
         //uint Ce,
         //uint msolPerwatt,
-        address addrC1
+        address addrSC
     ) {
       function f2(address addrSC) returns(uint) {
         SolCredits solcredits = SolCredits(addrSC);
