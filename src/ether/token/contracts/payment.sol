@@ -14,7 +14,7 @@ contract payment {
 //FIGURE OUT WAY TO DISTRIBUTE TRANSACTION WITH Pe, Ce, msolPerWatt and not have one person controlling all the dials.
   function runCycle(
         //uint Pe,
-        //uint Ce,
+        uint Ce,
         //uint msolPerwatt,
         address addrSC
     ) {
