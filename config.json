@@ -10,6 +10,7 @@
    ],
    "ether-account": [
      {
+       "tokenAddr":"0x",
        "address":"",
        "private":"",
        "swarm": {},
