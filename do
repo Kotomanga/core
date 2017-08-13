@@ -4,3 +4,4 @@ truffle build
 truffle migrate
 truffle test
 cd ../../..
+node app.js

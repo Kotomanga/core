@@ -3,7 +3,15 @@ const node = new IPFS()
 
 var ipfs = require('ipfs-api')();
 
-var swarm = function {
+node.on('ready', () => {
+  console.log("Your node is now ready to use \o/")
+
+  node.on('init', () => {
+    console.log("finished init repo")
+  })
+})
+
+var swarm = function() {
 ipfs.swarm.addrs(function (err, addrs) {
   if (err) {
     throw err
@@ -45,8 +53,6 @@ var display = function (hash) {
     }
   });
 }
-
-document.getElementById('store').onclick=store;
 
 module.exports.swarm = swarm;
 module.exports.connect = connect;
