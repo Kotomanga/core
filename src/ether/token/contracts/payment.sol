@@ -6,7 +6,7 @@
 // usage:
 // SolCredits can be deposited into this contract and only sent with each cycle by event approval.
 // Funds can be refunded and withdrawn.
-// P pays for all Tx.
+// P pays for all Tx Fees.
 // Cycle times chosen by P.
 // Trust is uniform
 // Thus, Both parties are protected from fraud.
