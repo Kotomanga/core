@@ -25,12 +25,8 @@ contract payment {
         event Revoke(address owner, bytes32 operation);
 
 //FIGURE OUT WAY TO DISTRIBUTE TRANSACTION WITH Pe, Ce, msolPerWatt and not have one person controlling all the dials.
-  function runCycle()
-
-    }
-
-    function withdraw() {
-        if (msg.sender.send(shares[msg.sender]))
-            shares[msg.sender] = 0;
-    }
+  function runCycle(address coinContractAddress) {
+		SolCredits s = SolCredits(solcredits);
+	}
+  }
 }
