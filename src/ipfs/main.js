@@ -1,15 +1,22 @@
 const IPFS = require('ipfs')
 const node = new IPFS()
 
-var ipfs = require('ipfs-api')();
-
 node.on('ready', () => {
-  console.log("Your node is now ready to use \o/")
-
-  node.on('init', () => {
-    console.log("finished init repo")
-  })
+  console.log('Your node is now ready to use \o/')
 })
+
+var ipfs = require('ipfs-api')('localhost', '5002', {protocol: 'http'});
+
+/*
+series([
+  (cb) => node.on('ready', cb),
+  (cb) => node.version((err, version) => {
+    if (err) { return cb(err) }
+    console.log('Version:', version.version)
+    cb()
+  })
+])
+*/
 
 var swarm = function() {
 ipfs.swarm.addrs(function (err, addrs) {
@@ -30,16 +37,9 @@ var connect = function (addr) {
 }
 
 var store = function (inputdata) {
-  var toStore = inputdata;
-  //TODO un-break this call:
-  ipfs.add(new Buffer(toStore), function (err, res){
-    if(err || !res) return console.error("ipfs add error", err, res);
-
-    res.forEach(function(file) {
-      console.log('successfully stored', file.Hash);
-      display(file.Hash);
-    });
-  });
+  ipfs.add(inputdata, function(err, hash) {
+    console.log(hash);
+});
 }
 
 var display = function (hash) {
@@ -58,3 +58,5 @@ module.exports.swarm = swarm;
 module.exports.connect = connect;
 module.exports.store = store;
 module.exports.display = display;
+
+console.log(store("Hello, World!"));

@@ -13,4 +13,4 @@ console.log("Licensed under the GPL-3");
 console.log("Created by Kyler Chin and Ethan Horoschak");
 
 console.log(ipfs.swarm)
-//console.log(ipfs.store("Hello, World!"));
+console.log(ipfs.store("Hello, World!"));

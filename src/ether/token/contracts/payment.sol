@@ -28,5 +28,4 @@ contract payment {
   function runCycle(address coinContractAddress) {
 		SolCredits s = SolCredits(solcredits);
 	}
-  }
 }
