@@ -20,22 +20,10 @@ contract payment {
         string PId;
         string CId;
         address solcredits;
-//Wallet Terms
-        address owner;
 
-        struct WithdrawlStruct {
-        address to;
-        uint amount;
+        function SimpleWallet() {
+          p = msg.sender;
         }
-
-        bool allowed;
-        uint amount_sends;
-        mapping(uint => WithdrawlStruct) withdrawls;
-        }
-
-        event Confirmation(address owner, bytes32 operation);
-        event Revoke(address owner, bytes32 operation);
-//end
 
 //FIGURE OUT WAY TO DISTRIBUTE TRANSACTION WITH Pe, Ce, msolPerWatt and not have one person controlling all the dials.
   function runCycle(unit amount) {
