@@ -19,15 +19,15 @@ contract payment {
         address c;
         string PId;
         string CId;
-        address solcredits;
+        address tokenAddr;
 
         function SimpleWallet() {
           p = msg.sender;
         }
 
 //FIGURE OUT WAY TO DISTRIBUTE TRANSACTION WITH Pe, Ce, msolPerWatt and not have one person controlling all the dials.
-  function runCycle(unit amount) {
-		SolCredits s = SolCredits(solcredits);
+  function runCycle(uint amount) {
+		SolCredits s = SolCredits(tokenAddr);
     //s.transfer(p, amount);
 	}
 }
