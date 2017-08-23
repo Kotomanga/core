@@ -1,4 +1,3 @@
-//sol
 // Multi-party, anti-fraud, partial-wallet for buying and selling electricity.
 // @authors:
 // Kyler Chin , <kylerschin@gmail.com>
